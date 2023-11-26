@@ -1,0 +1,102 @@
+body{
+	background-image: linear-gradient(to right, #ff87a5 , #ffcb6a);
+}
+@media screen and (max-width: 800px){
+    nav{
+        position: fixed;
+        z-index: 3;
+    }
+    .hamburger{
+    border-radius: 4px;
+    background: black;
+    color: #000;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+    transition: all 0.7s ease;
+    }
+    .nav-links{
+        position: fixed;
+        background: #fff;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        clip-path: circle(50px at 90% -20%);
+        -webkit-clip-path: circle(50px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .nav-links li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+    .nav-links li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+    .nav-links li:nth-child(3){
+        transition: all 0.5s ease 0.5s;
+    }
+    .nav-links li:nth-child(4){
+        transition: all 0.5s ease 0.6s;
+    }
+    .nav-links li:nth-child(5){
+        transition: all 0.5s ease 0.7s;
+    }
+    .nav-links li:nth-child(6){
+        transition: all 0.5s ease 0.8s;
+        margin: 0;
+    }
+    .nav-links li:nth-child(7){
+        transition: all 0.5s ease 0.9s;
+        margin: 0;
+    }
+     .nav-links li:nth-child(8){
+        transition: all 0.5s ease 1s;
+        margin: 0;
+    }
+    li.fade{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 800px){
+.main__text {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 140px;
+    width: 340px;
+    font-size: 18px;
+}
+}
+@media screen and (max-width: 580px){
+.main__text {
+	height: 140px;
+    width: 290px;
+    font-size: 18px;
+    margin:190px 20px 0 20px;
+}
+}
+
+@media screen and (max-width: 360px){
+.main__text {
+    margin:190px 2px 0 2px;
+}
+}
+
+@media screen and (max-width: 760px){
+.card-container{
+grid-gap: 60px;
+}
+}
